@@ -37,17 +37,20 @@
     }
 
     body{
-      font-family:'Inter',sans-serif;
-      background:
-      radial-gradient(circle at top left,#30215e 0%,transparent 30%),
-      radial-gradient(circle at bottom right,#0e4b5c 0%,transparent 30%),
-      linear-gradient(135deg,#050816 0%,#0b1224 50%,#101833 100%);
-      color:var(--text);
-      overflow-x:hidden;
-      min-height:100vh;
-      position:relative;
-    }
+  font-family:'Inter',sans-serif;
 
+  background:
+  radial-gradient(circle at top left,#1a1338 0%,transparent 28%),
+  radial-gradient(circle at bottom right,#0a3040 0%,transparent 24%),
+  linear-gradient(135deg,#02040b 0%,#070d1d 45%,#0b1124 100%);
+
+  color:#ffffff;
+
+  overflow-x:hidden;
+  min-height:100vh;
+  position:relative;
+}
+    
     .grid-overlay{
       position:fixed;
       inset:0;
@@ -61,13 +64,13 @@
     }
 
     .orb{
-      position:fixed;
-      border-radius:50%;
-      filter:blur(40px);
-      opacity:.4;
-      animation:float 18s infinite ease-in-out;
-      z-index:-1;
-    }
+  position:fixed;
+  border-radius:50%;
+  filter:blur(90px);
+  opacity:.12;
+  animation:float 18s infinite ease-in-out;
+  z-index:-1;
+}
 
     .orb1{
       width:300px;
@@ -707,6 +710,21 @@
       font-weight:800;
     }
 
+    .dark-overlay{
+  position:fixed;
+  inset:0;
+
+  background:
+  linear-gradient(
+    to bottom,
+    rgba(0,0,0,.35),
+    rgba(0,0,0,.2)
+  );
+
+  pointer-events:none;
+  z-index:-1;
+}
+
     footer{
       margin-top:100px;
       padding:50px 0 70px;
@@ -1108,6 +1126,7 @@
 <div class="orb orb1"></div>
 <div class="orb orb2"></div>
 <div class="orb orb3"></div>
+<div class="dark-overlay"></div>
 
 <div class="container">
 
